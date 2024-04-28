@@ -1,0 +1,77 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cassia Schlickmann - Especialista em Dermatologia | Florianópolis</title>
+	<meta name="description" content="Dra. Cassia Schlickmann, especialista em dermatologia pela UFSC, oferece tratamentos personalizados para uma pele saudável e rejuvenescida. Descubra mais.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="canonical" href="https://cassiadermatologista.com.br">
+	<link rel="icon" href="/favicon.svg" type="image/x-icon">
+	<meta name="robots" content="index, follow">
+	<meta property="og:title" content="Dra. Cassia Schlickmann - Especialista em Dermatologia">
+	<meta property="og:description" content="Especialista em cuidados da pele e tratamentos estéticos inovadores. Localizada em Florianópolis.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://cassiadermatologista.com.br">
+	<meta property="og:image" content="https://cassiadermatologista.com.br/og-image.jpg">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Dra. Cassia Schlickmann - Especialista em Dermatologia">
+	<meta name="twitter:description" content="Especialista em cuidados da pele e tratamentos estéticos inovadores. Localizada em Florianópolis.">
+	<meta name="twitter:image" content="https://cassiadermatologista.com.br/twitter-image.jpg">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--soft-white: #F9FAFB;
+		--light-blue: #D0E2F2;
+		--sage-green: #97A8A8;
+		--navy-blue: #2B3E59;
+		--warm-grey: #959D9F;
+		--soft-coral: #E8B4A8;
+		--dusty-rose: #D18B97;
+
+		--accent-gradient: linear-gradient(
+			45deg,
+			var(--dusty-rose),
+			var(--soft-coral) 30%,
+			white 60%
+		);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background: var(--soft-white);
+	}
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+	body {
+		margin: 0;
+	}
+</style>

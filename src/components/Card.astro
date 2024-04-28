@@ -1,0 +1,13 @@
+---
+interface Props {
+	title: string;
+	icon: string;
+}
+
+const { title, icon } = Astro.props;
+---
+
+<div style="display: flex; align-items: center; justify-content: center; flex-direction: column; border-radius: 8px; padding: 40px 20px; width: 190px; color: var(--navy-blue); font-family: 'Source Sans 3'; box-shadow: 0px 0px 10px 0px rgba(209, 139, 151, 0.5)">
+	<i style="font-size: 24px;" class={icon}></i>
+	<span style="text-align: center; margin-top: 10px;">{title}</span>
+</div>
