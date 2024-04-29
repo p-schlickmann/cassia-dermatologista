@@ -7,11 +7,10 @@ import {BOOK_URL, WHATS_APP_URL} from "../constants";
 
 <Layout>
 	<a href={WHATS_APP_URL} target="_blank">
-		<img src="/whatsapp.svg" style="position:fixed; bottom: 24px; right: 24px; width: 75px"/>
+		<img src="/whatsapp.svg" style="position:fixed; bottom: 24px; right: 24px; width: 75px;z-index: 10"/>
 	</a>
 	<header style="display: flex; align-items: center; justify-content: space-between; padding: 20px 40px">
 		<div style="display: flex; align-items: center">
-			<img src="/demo.png" style="width: 50px;"/>
 			<a href="https://www.instagram.com/cassiadermatologista" style="color: var(--navy-blue); font-size: 2rem; font-weight: 600; text-decoration: none">
 				Cassia Schlickmann
 			</a>
@@ -81,7 +80,51 @@ import {BOOK_URL, WHATS_APP_URL} from "../constants";
 			</a>
 		</section>
 
-		<section></section>
+		<section style="margin: 24px 0">
+			<div style="width: 100%; height: 400px; position: relative; overflow: hidden; display: flex; justify-content: center">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.985644422091!2d-48.551402523963716!3d-27.593974676247807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273961e4b69835%3A0xb4b2608af254bf01!2sCl%C3%ADnica%20VIVA%20Simon%20-%20Multiespecialidades%20-%20Florian%C3%B3polis!5e0!3m2!1sen!2sbr!4v1714347025077!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			<p style="text-align: center; font-weight: 400; font-size: 18px">
+				R. Lacerda Coutinho, 126 - Centro, Florianópolis - SC, 88015-030 <br/>
+				Telefones para contato: 48 984012016
+			<p>
+		</section>
+
+		<section style="margin: 48px 0; display: flex; justify-content: center; flex-direction: column; align-items: center">
+			<h1 style="text-align: center">Casos de <span class="text-gradient">sucesso</span></h1>
+			<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 24px;">
+
+				<div style="max-width: 300px; background-color: #FFFFFF; padding: 10px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+					<h3 style="color: #2B3E59;">Susana</h3>
+					<p style="color: #959D9F;">"Após o tratamento com a Dra. Cassia, minha pele nunca esteve tão saudável. Estou muito satisfeita com os resultados e recomendo a todos!"</p>
+				</div>
+
+				<div style="max-width: 300px; background-color: #FFFFFF; padding: 10px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+					<h3 style="color: #2B3E59;">Pedro</h3>
+					<p style="color: #959D9F;">"O cuidado e atenção que a Dra. Cassia tem com seus pacientes é excepcional. Minha confiança foi restaurada junto com a saúde da minha pele."</p>
+				</div>
+
+				<div style="max-width: 300px; background-color: #FFFFFF; padding: 10px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+					<h3 style="color: #2B3E59;">Lisete</h3>
+					<p style="color: #959D9F;">"O cuidado e atenção que a Dra. Cassia tem com seus pacientes é excepcional. Minha confiança foi restaurada junto com a saúde da minha pele."</p>
+				</div>
+
+				<div style="max-width: 300px; background-color: #FFFFFF; padding: 10px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+					<h3 style="color: #2B3E59;">Isabela</h3>
+					<p style="color: #959D9F;">"O cuidado e atenção que a Dra. Cassia tem com seus pacientes é excepcional. Minha confiança foi restaurada junto com a saúde da minha pele."</p>
+				</div>
+
+				<div style="max-width: 300px; background-color: #FFFFFF; padding: 10px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+					<h3 style="color: #2B3E59;">Julia</h3>
+					<p style="color: #959D9F;">"O cuidado e atenção que a Dra. Cassia tem com seus pacientes é excepcional. Minha confiança foi restaurada junto com a saúde da minha pele."</p>
+				</div>
+
+				<div style="max-width: 300px; background-color: #FFFFFF; padding: 10px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+					<h3 style="color: #2B3E59;">Jurandir</h3>
+					<p style="color: #959D9F;">"O cuidado e atenção que a Dra. Cassia tem com seus pacientes é excepcional. Minha confiança foi restaurada junto com a saúde da minha pele."</p>
+				</div>
+			</div>
+		</section>
 	</main>
 	<footer style="display: flex; align-items: center; justify-content: center; background-color: var(--soft-coral); width: 100vw">
 		<p style="text-align: center; font-size: 18px">
