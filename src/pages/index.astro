@@ -11,7 +11,7 @@ import {BOOK_URL, WHATS_APP_URL} from "../constants";
 	</a>
 	<header class="header-container">
 		<div style="display: flex; align-items: center">
-			<a href="https://www.instagram.com/cassiadermatologista" style="color: var(--navy-blue); font-size: 2rem; font-weight: 600; text-decoration: none">
+			<a href="https://www.instagram.com/cassiadermatologista" style="color: var(--navy-blue); font-size: 2rem; font-weight: 600; text-decoration: none; margin-right: 20px">
 				Cassia Schlickmann
 			</a>
 		</div>
@@ -27,7 +27,7 @@ import {BOOK_URL, WHATS_APP_URL} from "../constants";
 			</a>
 		</div>
 	</header>
-	<main style="max-width: 1200px;">
+	<main>
 		<section class="img-section" style="margin-top: 48px;">
 			<div>
 				<h1>Sua pele saudável <br/> começa <span class="text-gradient">aqui</span></h1>
@@ -46,7 +46,7 @@ import {BOOK_URL, WHATS_APP_URL} from "../constants";
 
 		</section>
 		<div style="display:flex; justify-content: center">
-			<img src="/divider.png" style="margin: 60px 0;"/>
+			<img src="/divider.png" class="divider-img"/>
 		</div>
 		<section class="img-section-2" style="margin-top: 12px; ">
 			<img src="/botox2.png" class="hero-img"/>
@@ -137,10 +137,10 @@ import {BOOK_URL, WHATS_APP_URL} from "../constants";
 	main {
 		margin: auto;
 		width: 100%;
-		max-width: calc(100% - 8rem);
 		color: var(--navy-blue);
 		font-size: 20px;
 		line-height: 1.6;
+		max-width: 1200px;
 	}
 	.astro-a {
 		position: absolute;
@@ -220,6 +220,10 @@ import {BOOK_URL, WHATS_APP_URL} from "../constants";
 		margin-top: 0;
 	}
 
+	.divider-img {
+		margin: 60px 0;
+	}
+
 	@media screen and (max-width: 1000px) {
 		.img-section-2 {
 			flex-direction: column-reverse;
@@ -240,6 +244,20 @@ import {BOOK_URL, WHATS_APP_URL} from "../constants";
 
 		.cta-section p {
 			width: 100%;
+		}
+
+		.divider-img {
+			margin: 30px 0;
+		}
+
+		.header-container {
+			position: fixed;
+			background-color: var(--soft-white);
+			z-index: 20;
+		}
+
+		main {
+			padding-top: 100px;
 		}
 	}
 
